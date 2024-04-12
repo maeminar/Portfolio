@@ -10,6 +10,7 @@ h1 {
 }
 h2 {
   text-align: center;
+  padding: 40px;
 }
 
 /* version mobile */
@@ -46,35 +47,13 @@ body nav .burger-menu img {
   width: 25px;
   margin: 5px;
 }
-
-/* presentation */
-
-body main .presentation {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  text-align: center;
-  margin-right: 30px;
-  margin-left: 30px;
-}
-body main .presentation p {
-  padding-top: 30px;
-}
-body main .presentation .img_avatar {
-  width: 40%;
-  border-radius: 20%;
-  animation: rotation 3s ease;
-}
-
 /* projects */
 .cards {
   display: flex;
   flex: wrap;
   align-items: center;
   justify-content: center;
-  padding: 70px;
+  padding: 40px;
   border-radius: 20px;
 }
 .card {
@@ -105,8 +84,6 @@ body main .presentation .img_avatar {
   padding: 15px 20px;
   box-sizing: border-box;
 }
-
-
 /* Media query version desktop */
 @media screen and (min-width: 768px) {
   .burger-menu {
