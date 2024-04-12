@@ -1,0 +1,147 @@
+* {
+  margin: 0px;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(to right, #8bd4d4, #938fd4, #b64fb1);
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  text-align: center;
+}
+
+/* version mobile */
+/* navbar */
+
+body .navbar {
+  background-color: #bbd1df;
+  color: #e4b4e6;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+body nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+}
+
+body nav .container .logo {
+  height: 40px;
+  width: 40px;
+  animation: logo 3s ease-out;
+}
+
+.menu {
+  display: none; /* Masquer le menu par défaut */
+}
+
+.burger-menu {
+  display: block;
+}
+
+body nav .burger-menu img {
+  width: 25px;
+  margin: 5px;
+}
+
+/* pressentation */
+
+body main .presentation {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+body main .presentation p {
+  padding-top: 30px;
+}
+body main .presentation .img_avatar {
+  width: 40%;
+  border-radius: 20%;
+  animation: rotation 3s ease;
+}
+
+/* projects */
+
+.card {
+  width: 400px;
+  margin: 0px auto;
+  background-color: white;
+  box-shadow: 0px 5px 20px #555;
+}
+.card-image {
+  height: 20%;
+  position: relative;
+  overflow: hidden;
+  width: 400px;
+}
+.img {
+  height: 20%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: grayscale(1);
+  transition-property: filter width;
+  transition-duration: 0.3s;
+}
+.card-body {
+  text-align: center;
+  padding: 15px 20px;
+  box-sizing: border-box;
+}
+.projects {
+  display: flex;
+  flex: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Media query version desktop */
+@media screen and (min-width: 768px) {
+  .burger-menu {
+    display: none; /* Masquer le menu burger */
+  }
+
+  .menu {
+    display: flex;
+  }
+
+  .menu li {
+    list-style: none;
+    margin-right: 20px;
+  }
+
+  .menu li a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .menu li a:hover {
+    text-decoration: none;
+    color: #020202;
+  }
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes logo {
+  from {
+    opacity: 0;
+  }
+  to {
+    transition-delay: 5s;
+    opacity: 1;
+  }
+}
