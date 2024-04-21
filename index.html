@@ -19,8 +19,9 @@
         <ul class="menu">
           <li><a href="#presentation">Accueil</a></li>
           <li><a href="#aboutme">Qui suis-je</a></li>
+          <li><a href="#career">Mon parcours</a></li>
           <li><a href="#competences">Mes compétences</a></li>
-          <li><a href="#projects">Projets</a></li>
+          <li><a href="#projects">Mes projets</a></li>
         </ul>
         <div class="burger-menu">
           <img src="imgs/img_menu_burger.svg" alt="" />
@@ -34,22 +35,42 @@
           Bienvenue sur mon portfolio. <br>Je suis une développeuse web front-end,
           basée à Lyon, en France. <br> Je suis à la recherche d'un stage (de préférence en front-end) du 4 septembre au 31 octobre 2024, sur Lyon ou à en distanciel.
         </p>
-        <button>A propos de moi</button>
+        <button class="action_button" href="#aboutme"> A propos de moi</button>
         <img class="img_avatar" src="imgs/avatar2.svg" alt="avatar de femme" />
       </section>
       <section id="aboutme" class="aboutme">
-        <h1>About me...</h1>
+    <div class="container_section">
+          <h2 class="title_section">A propos de moi</h2>
+        <img src="imgs/me.jpg" alt="image de moi">
+        <div class="about_description">
+          <div> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ </div>
         <p>
-        Bonjour à tous.tes ! <br>
-        Je me présente je m'appelle Emma, j'ai 28 ans, et je suis actuellement en reconversion professionnelle pour devenir développeuse web. Après l'obtention d'un Master en Droit et Gestion des RH dans les services publics à l'Université Lyon 2, et diverses expériences professionnelles dans ce domaine, j'ai décidé de me lancer dans ce nouveau challenge. C'est pourquoi je suis actuellement en formation au sein de l'école Human Booster pour une durée d'un an et l'obtention d'un titre RNCP de niveau 5. Dans ce cadre, je suis à la recherche d'un stage en développement web à Lyon ou en distanciel du 04/09 au 31/10/2024, alors n'hésitez pas à me contacter !
+        Je m'appelle Emma, j'ai 28 ans, et je suis actuellement en reconversion professionnelle pour devenir développeuse web. <br> <br>Après l'obtention d'un Master en Droit et Gestion des RH dans les services publics à l'Université Lyon 2, et diverses expériences professionnelles dans ce domaine, j'ai décidé de me lancer dans ce nouveau challenge. <br> <br> C'est pourquoi je suis actuellement en formation au sein de l'école Human Booster pour une durée d'un an et l'obtention d'un titre RNCP de niveau 5. 
         </p>  
-        <h2>Mes expériences professionnelles</h2> 
-        <p>bla</p>
-        <h2>Mes formations</h2>
-        <p>bla</p>
-        <h2>Mes hobbies</h2>
-        <p>bla</p>
-        <button>Télécharger mon CV</button>
+        <button class="action_button"> <a href="imgs/CV_2024-04-21_Emma_MINARY.pdf" download="CV_2024-04-21_Emma_MINARY.pdf">Télécharger mon CV</a></button>
+        
+        <div class="about_box">
+          <ul>
+          <li>Autonome</li>
+          <li>Créative</li>
+          <li>Passionnée</li>
+          <li>Curieuse</li>
+        </ul>
+        </div>
+      </div>
+    </div>
+    <div id="career" class="career_section">
+      <h2>Mon parcours</h2>
+      <ul>
+        <li class="career_li_right"> → Octobre 2023 à Novembre 2023 <br> Formation développeur web et web mobile <br> Human Boooster, Lyon</li>
+        <li  class="career_li">→ Mars 2023 à Octobre 2023 <br> Autoformation développement web <br> Openclassroom</li>
+        <li class="career_li_right">→ Décembre 2022 à février 2023 <br> Coordinatrice nationale administrative des services civiques <br> UFCV, Lyon</li>
+        <li class="career_li">→ Septembre 2020 à mars 2021 <br> Chargée de l'équipe des bénévoles - Service civique <br> Epicerie sociale Epi c'est bon!, Lyon </li>
+        <li class="career_li_right">→ Chargée de formation <br> De janvier 2019 à décembre 2019 <br> Ville de Vaulx-en-Velin</li>
+        <li class="career_li">→ Septembre 2018 à septembre 2019 <br> Université Lumière Lyon II Lyon <br>Master II Droit et gestion des Ressources Humaines dans les services publics</li>
+        <li class="career_li_right">→ Septembre 2015 à septembre 2017 <br> Licence Administration Economique et Sociale, spécialité Etudes Politiques</li>
+      </ul>
+    </div>
       </section>
       <section id="competences" class ="pro">
         <h2>Mes compétences</h2>
@@ -95,7 +116,7 @@
       </div>
       </section>
       <section id="projects" class="projects">
-        <h2>Mes réalisations</h2>
+        <h2>Mes projets</h2>
         <div class="cards">
           <div class="card">
             <div class="card-image">
@@ -130,6 +151,7 @@
           </div>
         </div>
       </section>
+    </main>
       <div>
       <img class="wave" src="imgs/wave.png" alt="vague">
     </div>
@@ -154,6 +176,5 @@
             </div>
         </div>
     </footer>
-    </main>
   </body>
 </html>

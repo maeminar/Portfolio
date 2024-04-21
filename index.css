@@ -1,9 +1,15 @@
 * {
+  
   margin: 0px;
 }
 body {
   font-family: "Montserrat", sans-serif;
   background: linear-gradient(to right, #8bd4d4, #938fd4, #b64fb1);
+}
+main {
+  padding-top: 40px;
+  padding-left: 150px;
+  padding-right: 50px;
 }
 h1 {
   font-size: 4rem;
@@ -13,48 +19,69 @@ h2 {
   font-size: 2rem;
   text-align: center;
 }
-
-
+ul {
+  list-style-type: none;
+  text-decoration: none;
+  padding: 0;
+}
+li{
+  list-style-type: none;
+  text-decoration: none;
+  padding: 0;
+}
+button {
+  display: inline-block;
+  background-color: #40374d;
+  border-radius: 10px;
+  border: 4px  #cccccc;
+  color: #eeeeee;
+  text-align: center;
+  padding: 10px;
+  width: 200px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 20px;
+}
+button:hover {
+  background-color: rgb(0, 0, 0);
+}
 /* version mobile */
 /* navbar */
 
 body .navbar {
-  background-color: rgb(38,37,40);
+  background-color: rgba(38, 37, 40, 0.8);
   color: #e4b4e6;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
-  padding: 10px 20px; /* Espacement interne */
-  width: auto;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5);
+  width: 100px; /* Largeur de la barre de navigation */
   position: fixed; /* Fixer la barre de navigation en haut de la page */
   top: 0;
   left: 0; /* Fixer la barre de navigation à gauche de la page */
+  transition: background-color 0.8s; /* Ajouter une transition douce pour les changements de couleur */
+  width: 150px;
+}
+
+nav ul.menu {
   display: flex;
   flex-direction: column; /* Pour que les éléments s'alignent de haut en bas */
   justify-content: flex-start; /* Pour aligner les éléments en haut de la barre de navigation */
-  align-items: flex-start;
-  transition: background-color 0.3s;
+  align-items: flex-start; /* Pour aligner les éléments à gauche de la barre de navigation */
+  height: 1000px;
 }
+nav .container {
 
-body nav .container {
-  display: flex;
-    flex-direction: column; /* Pour que les éléments s'alignent de haut en bas */
-    justify-content: flex-start; /* Pour aligner les éléments en haut de la barre de navigation */
-    align-items: flex-start;
 }
-
-body nav .container .logo {
-  height: 40px;
-  width: 40px;
-  animation: logo 3s ease-out;
+nav li {
+margin: 20px;
 }
-
 .menu {
   display: none; /* Masquer le menu par défaut */
 }
-
 .burger-menu {
   display: block;
 }
-
 body nav .burger-menu img {
   width: 25px;
   margin: 5px;
@@ -76,28 +103,95 @@ body main .presentation p {
   padding-top: 30px;
 }
 body main .presentation .img_avatar {
-  width: 40%;
+  width: 35%;
   border-radius: 20%;
   animation: rotation 3s ease;
 }
 
-/* Pro */ 
+/* About me */
+/* description */
+section.aboutme {
+  display: flex;
+  flex-direction: column;
+ 
+}
+section.aboutme .title_section {
+  padding: 25px;
+  grid-column: 2;
+}
+section.aboutme .container_section 
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 20px; 
+}
 
+section.aboutme img {
+  width: 70%; /* La largeur de l'image est égale à la largeur du conteneur de l'image */
+  height: auto;
+  border-radius: 15%;
+  justify-self: center;
+  grid-column: 1; /* La colonne de l'image */
+}
+
+section.aboutme .about_description {
+  display: flex;
+    flex: 1 1;
+    flex-direction: column;
+    justify-content: end;
+}
+section.aboutme .about_box { 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+section.aboutme .about_box ul li { 
+  border: solid #000;
+  display: flex;
+ justify-content: center;
+padding: 10px;
+margin: 40px;
+}
+
+/* career */
+section.aboutme .career_section {
+margin: 90px 60px 90px 130px;
+display: flex;
+flex-direction: column;
+position: relative;
+    box-shadow: 0 0 50px #000;
+    transition: box-shadow 1s;
+    background-color: rgb(38,37,40);
+    color: white;
+}
+section.aboutme .career_section h2 {
+  padding: 40px;
+}
+section.aboutme .career_section ul li { 
+padding: 25px;
+}
+section.aboutme .career_section .career_li_right {
+  display: flex;
+  justify-content: end;
+}
+
+/* Pro competences */ 
+section.pro h2 {
+  padding: 40px;
+}
 section.pro .card {
-  /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
   transition: 0.3s;
   margin: 30px;
 }
 
-/* On mouse-over, add a deeper shadow */
 section.pro .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,1);
 }
 
-/* Add some padding inside the card container */
 section.pro .container {
-  padding: 2px 16px;
+  padding: 10px 26px;
 }
 section.pro ul li img {
   width : 40px;
@@ -114,9 +208,11 @@ section.pro ul {
 }
 section.pro ul li {
   list-style-type:none;
-  
   margin: 20px;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .card_container  {
   display: flex;
@@ -131,6 +227,9 @@ section.pro h3 b {
 }
 
 /* projects */
+section.projects h2 {
+  padding: 40px;
+}
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -242,7 +341,7 @@ footer .container .row .column ul li a:hover {
   }
   .menu li a:hover {
     text-decoration: none;
-    color: #020202;
+    color: #53adc4;
   }
 }
 @keyframes rotation {
