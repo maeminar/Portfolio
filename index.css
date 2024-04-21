@@ -1,5 +1,4 @@
 * {
-  
   margin: 0px;
 }
 body {
@@ -48,7 +47,7 @@ button {
 button:hover {
   background-color: rgb(0, 0, 0);
 }
-/* version mobile */
+
 /* navbar */
 
 body .navbar {
@@ -62,7 +61,10 @@ body .navbar {
   transition: background-color 0.8s; /* Ajouter une transition douce pour les changements de couleur */
   width: 150px;
 }
-
+.navbar a {
+  color: #ffffff; /* Couleur du texte des liens */
+  text-decoration: none; /* Supprimer le soulignement des liens */
+}
 nav ul.menu {
   display: flex;
   flex-direction: column; /* Pour que les éléments s'alignent de haut en bas */
@@ -162,7 +164,7 @@ flex-direction: column;
 position: relative;
     box-shadow: 0 0 50px #000;
     transition: box-shadow 1s;
-    background-color: rgb(38,37,40);
+    background-color: rgba(38,37,40,0,3);
     color: white;
 }
 section.aboutme .career_section h2 {
@@ -321,27 +323,62 @@ footer .container .row .column ul li a:hover {
 
 
 /* Media query version desktop */
-@media screen and (min-width: 768px) {
-  .burger-menu {
-    display: none; /* Masquer le menu burger */
+/* Media query pour les appareils mobiles jusqu'à 767px de largeur */
+@media only screen and (max-width: 767px) {
+  /* Réduire la taille de la police pour les titres */
+  h1 {
+    font-size: 24px;
   }
 
-  .menu {
-    display: flex;
+  h2 {
+    font-size: 20px;
   }
 
-  .menu li {
-    list-style: none;
-    margin-right: 20px;
+  /* Réduire la taille de la police pour les paragraphes */
+  p {
+    font-size: 16px;
   }
 
-  .menu li a {
-    text-decoration: none;
-    color: #ffffff;
+  /* Centrer le texte dans les sections */
+  .container_section {
+    text-align: center;
   }
-  .menu li a:hover {
-    text-decoration: none;
-    color: #53adc4;
+
+  /* Ajuster la taille de l'image de profil */
+  .img_avatar {
+    width: 150px;
+    height: 150px;
+  }
+  .navbar {
+    width: 100%; /* Adapter la largeur de la barre de navigation */
+  }
+
+  /* Réduire la largeur des cartes de compétences */
+  .card_container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  /* Ajuster la largeur des colonnes de la section de carrière */
+  .career_li,
+  .career_li_right {
+    width: 100%;
+  }
+
+  /* Centrer le texte dans les colonnes de la section de carrière */
+  .career_li,
+  .career_li_right {
+    text-align: center;
+  }
+
+  /* Ajuster la largeur des images des projets */
+  .card-image img {
+    max-width: 100%;
+  }
+
+  /* Ajuster la taille de la vague dans le pied de page */
+  .wave {
+    width: 100%;
+    height: auto;
   }
 }
 @keyframes rotation {
