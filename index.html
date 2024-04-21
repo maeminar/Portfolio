@@ -3,24 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mon portfolio</title>
+    <title>Portfolio d'Emma!</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
+  
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <nav class="navbar">
       <div class="container">
-        <img class="logo" src="imgs/developpement-web.png" />
         <ul class="menu">
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="projet.html">Projets</a></li>
-          <li><a href="aboutme.html">Qui suis-je?</a></li>
-          <li><a href="contact.html">Contactez-moi</a></li>
+          <li><a href="#presentation">Accueil</a></li>
+          <li><a href="#aboutme">Qui suis-je</a></li>
+          <li><a href="#competences">Mes compétences</a></li>
+          <li><a href="#projects">Projets</a></li>
         </ul>
         <div class="burger-menu">
           <img src="imgs/img_menu_burger.svg" alt="" />
@@ -28,15 +28,73 @@
       </div>
     </nav>
     <main>
-      <section class="presentation">
+      <section id="presentation" class="presentation">
         <h1>HI, I'M EMMA MINARY.</h1>
         <p>
-          Bienvenue sur mon portfolio. Je suis une web développeuse front-end,
-          basée à Lyon, en France.
+          Bienvenue sur mon portfolio. <br>Je suis une développeuse web front-end,
+          basée à Lyon, en France. <br> Je suis à la recherche d'un stage (de préférence en front-end) du 4 septembre au 31 octobre 2024, sur Lyon ou à en distanciel.
         </p>
+        <button>A propos de moi</button>
         <img class="img_avatar" src="imgs/avatar2.svg" alt="avatar de femme" />
       </section>
-      <section class="projects">
+      <section id="aboutme" class="aboutme">
+        <h1>About me...</h1>
+        <p>
+        Bonjour à tous.tes ! <br>
+        Je me présente je m'appelle Emma, j'ai 28 ans, et je suis actuellement en reconversion professionnelle pour devenir développeuse web. Après l'obtention d'un Master en Droit et Gestion des RH dans les services publics à l'Université Lyon 2, et diverses expériences professionnelles dans ce domaine, j'ai décidé de me lancer dans ce nouveau challenge. C'est pourquoi je suis actuellement en formation au sein de l'école Human Booster pour une durée d'un an et l'obtention d'un titre RNCP de niveau 5. Dans ce cadre, je suis à la recherche d'un stage en développement web à Lyon ou en distanciel du 04/09 au 31/10/2024, alors n'hésitez pas à me contacter !
+        </p>  
+        <h2>Mes expériences professionnelles</h2> 
+        <p>bla</p>
+        <h2>Mes formations</h2>
+        <p>bla</p>
+        <h2>Mes hobbies</h2>
+        <p>bla</p>
+        <button>Télécharger mon CV</button>
+      </section>
+      <section id="competences" class ="pro">
+        <h2>Mes compétences</h2>
+        <div class="card_container">
+        <div class="card">
+          <div class="container">
+            <h3><b>Front-end</b></h3>
+            <ul>
+              <li><img src="imgs/html.png" alt="logo de HTML5" /> HTML</li>
+              <li><img src="imgs/css.png" alt="logo de CSS3" /> CSS/ SASS</li>
+              <li><img src="imgs/js.png" alt="logo de JavaScript" /> JavaScript</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="container">
+            <h3><b>Back-end</b></h3>
+            <ul>
+                <li><img src="imgs/php.png" alt="logo de PHP"> <br> PHP</li>
+                <li> <img src="imgs/sql.png" alt="logo de SQL"> <br>SQL</li>   
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="container">
+            <h3><b>Framework</b></h3>
+            <ul>
+                <li><img src="imgs/symfony.png" alt="logo de Symfony">Symfony</li>
+                <li><img src="imgs/angular.png" alt="logo d'Angular">Angular</li>   
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="container">
+            <h3><b>Autre</b></h3>
+            <ul>
+                <li> <img src="imgs/github.png" alt="logo de Githbub">Github</li>
+                <li><img src="imgs/wordpress.png" alt="logo de Wordpress">Wordpress</li>
+                <li> <img src="imgs/figma.png" alt="logo de Figma">Figma</li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+      </section>
+      <section id="projects" class="projects">
         <h2>Mes réalisations</h2>
         <div class="cards">
           <div class="card">
@@ -61,14 +119,10 @@
               <img src="imgs/laverie.webp" alt="image d'une laverie" />
               <div class="card-body">
                 <div class="card-title">
-                  <h3>Site</h3>
+                  <h3>Blog voyage</h3>
                   <div class="card-description">
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Distinctio praesentium porro inventore animi aliquid
-                      beatae eaque obcaecati quasi mollitia, delectus tenetur
-                      non cum quae tempore dolor voluptate rem optio voluptas!
-                    </p>
+                      Site statique fictif réalisé à base d'une maquette.</p>
                   </div>
                 </div>
               </div>
@@ -76,6 +130,30 @@
           </div>
         </div>
       </section>
+      <div>
+      <img class="wave" src="imgs/wave.png" alt="vague">
+    </div>
+      <footer>
+        <div class="container">
+            <div class="row">
+                <div class="column left">
+                  <h3>Liens</h3> <br>
+                  <ul>
+                      <li><a href="https://github.com/maeminar">Github</a></li>
+                      <li><a href="https://www.linkedin.com/in/emma-minary/">Linkedin</a></li>
+                      <li><a href="https://www.instagram.com/maeminar/">Instagram</a></li>
+                  </ul>
+                </div>
+                <div class="column right">
+                  <h3>Contact</h3> <br>
+                  <h4>Mon profil vous intéresse ?
+                  N'hésitez pas à me contacter par mail, ou à m'envoyer un message sur mes réseaux sociaux.</h4> <br>
+                  <p>Email : emmaminary@gmail.com</p> <br> <br>
+                  <p>©Copyright 2024. Made by Emma MINARY</p>
+                </div>
+            </div>
+        </div>
+    </footer>
     </main>
   </body>
 </html>

@@ -6,26 +6,39 @@ body {
   background: linear-gradient(to right, #8bd4d4, #938fd4, #b64fb1);
 }
 h1 {
-  font-size: 3rem;
-}
-h2 {
+  font-size: 4rem;
   text-align: center;
 }
+h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
 
 /* version mobile */
 /* navbar */
 
 body .navbar {
-  background-color: #bbd1df;
+  background-color: rgb(38,37,40);
   color: #e4b4e6;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px 20px; /* Espacement interne */
+  width: auto;
+  position: fixed; /* Fixer la barre de navigation en haut de la page */
+  top: 0;
+  left: 0; /* Fixer la barre de navigation à gauche de la page */
+  display: flex;
+  flex-direction: column; /* Pour que les éléments s'alignent de haut en bas */
+  justify-content: flex-start; /* Pour aligner les éléments en haut de la barre de navigation */
+  align-items: flex-start;
+  transition: background-color 0.3s;
 }
 
 body nav .container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 20px;
+    flex-direction: column; /* Pour que les éléments s'alignent de haut en bas */
+    justify-content: flex-start; /* Pour aligner les éléments en haut de la barre de navigation */
+    align-items: flex-start;
 }
 
 body nav .container .logo {
@@ -53,7 +66,7 @@ body main .presentation {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-top: 100px;
+  padding-top: 60px;
   padding-bottom: 100px;
   text-align: center;
   margin-right: 30px;
@@ -68,10 +81,59 @@ body main .presentation .img_avatar {
   animation: rotation 3s ease;
 }
 
+/* Pro */ 
+
+section.pro .card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+  transition: 0.3s;
+  margin: 30px;
+}
+
+/* On mouse-over, add a deeper shadow */
+section.pro .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,1);
+}
+
+/* Add some padding inside the card container */
+section.pro .container {
+  padding: 2px 16px;
+}
+section.pro ul li img {
+  width : 40px;
+  height : 40px;
+  
+}
+section.pro ul {
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: center;
+ padding: 0;
+ 
+}
+section.pro ul li {
+  list-style-type:none;
+  
+  margin: 20px;
+
+}
+.card_container  {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  flex-direction: column;
+  flex-wrap: wrap; /* Permettre le retour à la ligne des cartes si nécessaire */
+}
+section.pro h3 b {
+  display: flex;
+  justify-content: center;
+}
+
 /* projects */
 .cards {
   display: flex;
-  flex: wrap;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   padding: 70px;
@@ -105,6 +167,58 @@ body main .presentation .img_avatar {
   padding: 15px 20px;
   box-sizing: border-box;
 }
+/* footer */ 
+img.wave {
+  position: relative;
+  top: 10px;
+  width: 100%;
+  filter: grayscale(50%);
+}
+footer {
+  background-color: rgb(38,37,40);
+  padding: 10px 0;
+  color: white;
+}
+
+footer .container {
+  width: 80%;
+  margin: auto;
+}
+
+footer .container .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer .container .row .column {
+  flex: 1; /* Chaque colonne prendra 50% de l'espace */
+  padding: 0 20px;
+}
+.left {
+  text-align: left; /* Aligner le contenu à gauche */
+}
+
+.right {
+  text-align: right; /* Aligner le contenu à droite */
+}
+footer .container .row .column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer .container .row .column ul li {
+  margin-bottom: 10px;
+}
+
+footer .container .row .column ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+footer .container .row .column ul li a:hover {
+  color: #b67fc7;
+}
+
 
 
 /* Media query version desktop */

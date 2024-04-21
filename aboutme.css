@@ -1,0 +1,131 @@
+* {
+    margin: 0px;
+  }
+  body {
+    font-family: "Montserrat", sans-serif;
+    background: linear-gradient(to right, #8bd4d4, #938fd4, #b64fb1);
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    text-align: center;
+    padding: 40px;
+  }
+  
+  /* version mobile */
+  /* navbar */
+  
+  body .navbar {
+    background-color: #bbd1df;
+    color: #e4b4e6;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  body nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+  }
+  
+  body nav .container .logo {
+    height: 40px;
+    width: 40px;
+    animation: logo 3s ease-out;
+  }
+  
+  .menu {
+    display: none; /* Masquer le menu par défaut */
+  }
+  
+  .burger-menu {
+    display: block;
+  }
+  
+  body nav .burger-menu img {
+    width: 25px;
+    margin: 5px;
+  }
+/* footer */ 
+footer {
+    background-color: #000000;
+    padding: 20px 0;
+    color: white;
+}
+
+footer .container {
+    width: 80%;
+    margin: auto;
+}
+
+footer .container .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .container .row .column {
+    flex: 1; /* Chaque colonne prendra 50% de l'espace */
+    padding: 0 20px;
+}
+.left {
+    text-align: left; /* Aligner le contenu à gauche */
+}
+
+.right {
+    text-align: right; /* Aligner le contenu à droite */
+}
+footer .container .row .column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer .container .row .column ul li {
+    margin-bottom: 10px;
+}
+
+footer .container .row .column ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer .container .row .column ul li a:hover {
+    color: #b67fc7;
+}
+
+
+  
+/* Media query version desktop */
+@media screen and (min-width: 768px) {
+    .burger-menu {
+      display: none; /* Masquer le menu burger */
+    }
+  
+    .menu {
+      display: flex;
+    }
+  
+    .menu li {
+      list-style: none;
+      margin-right: 20px;
+    }
+  
+    .menu li a {
+      text-decoration: none;
+      color: #ffffff;
+    }
+    .menu li a:hover {
+      text-decoration: none;
+      color: #020202;
+    }
+  }
+  @keyframes logo {
+    from {
+      opacity: 0;
+    }
+    to {
+      transition-delay: 5s;
+      opacity: 1;
+    }
+  }
+  
