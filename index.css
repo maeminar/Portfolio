@@ -65,28 +65,15 @@ body .navbar {
   color: #ffffff; /* Couleur du texte des liens */
   text-decoration: none; /* Supprimer le soulignement des liens */
 }
-nav ul.menu {
+nav ul {
   display: flex;
   flex-direction: column; /* Pour que les éléments s'alignent de haut en bas */
   justify-content: flex-start; /* Pour aligner les éléments en haut de la barre de navigation */
   align-items: flex-start; /* Pour aligner les éléments à gauche de la barre de navigation */
   height: 1000px;
 }
-nav .container {
-
-}
 nav li {
 margin: 20px;
-}
-.menu {
-  display: none; /* Masquer le menu par défaut */
-}
-.burger-menu {
-  display: block;
-}
-body nav .burger-menu img {
-  width: 25px;
-  margin: 5px;
 }
 
 /* presentation */
@@ -348,10 +335,6 @@ footer .container .row .column ul li a:hover {
   .img_avatar {
     width: 150px;
     height: 150px;
-  }
-  .navbar {
-    width: 100%; /* Adapter la largeur de la barre de navigation */
-  }
 
   /* Réduire la largeur des cartes de compétences */
   .card_container {
@@ -389,12 +372,92 @@ footer .container .row .column ul li a:hover {
     transform: rotate(360deg);
   }
 }
-@keyframes logo {
-  from {
-    opacity: 0;
+}
+
+/* Menu burger */
+#burger
+{
+    display: none;
+}
+@media all and (max-width: 991px)
+{
+  nav {
+    display: flex;
+    flex-direction: column;
+    background: black;
+    overflow: hidden;
+    width: 200px;
+    /* Pour que les liens soient "rangés" par défaut */
+    transform: translateX(-200px);
   }
-  to {
-    transition-delay: 5s;
-    opacity: 1;
+  
+  #burger-logo,
+  nav {
+    /* Pour qu'il y ait une animation */
+    transition: 0.7s;
+  }
+  
+  /* Lorsque #hamburger est coché, le #hamburger-logo et le nav qui sont dans le même parent changent de propriété */
+  #burger:checked ~ #burger-logo,
+  #burger:checked ~ nav {
+    /* Changement de la position pour afficher les menus */
+    transform: translate(0);
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  nav a:hover {
+    background: #444;
+  }
+    .menu {
+      position: fixed;
+      width: 0px;
+    }
+    #burger {
+      /* Pour que la checkbox ne s'affiche pas */
+      display: none;
+    }
+    #burger-logo {
+      /* Pour que le curseur soit un pointeur */
+      cursor: pointer;
+      background: black;
+      width: 200px;
+      display: block;
+      color: white;
+      /* Pour que le menu burger s'affiche toujours */
+      text-align: right;
+      /* Pour que le menu burger soit "rangé" par défaut */
+      transform: translateX(-168px);
+      padding: 10px;
+    }
+    nav .container_menu
+    {
+        display: none;
+        flex-direction: column;
+        background: #37a85d;
+        height: 220px;
+    }
+
+    nav .container_menu a {
+      width: 50%;
+    }
+ 
+    label 
+    {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+    }
+    #toggle:checked + .container_menu {
+      display: flex;
   }
 }
